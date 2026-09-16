@@ -23,4 +23,13 @@ public class Cuenta {
                 " tipoCuenta: " + tipoCuenta + " saldo: " + saldo + "]";
     }
 
+    // Creación del método recargar
+    public void recargarCuenta(double cantidad) {
+        saldo += cantidad;
+    }
+
+    public void retirar(double cantidad){
+        saldo -= cantidad;
+    }
+    
 }
