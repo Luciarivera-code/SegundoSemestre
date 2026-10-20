@@ -1,3 +1,4 @@
+
 public class Estudiantes {
 
     
@@ -17,8 +18,8 @@ public Estudiantes (int id, String nombre, String curso, double nota1, double no
     this.nota3= nota3;
  }
 
-public Strin toString (){
-    return "Estudiantes [notas:" + notas + " nombre: " + nombre + " cursos: " + cursos + " id: " + id "]" ; 
+public String toString (){
+    return "Estudiantes [id: " + id + " nombre: " + nombre + " curso: " + curso + " nota1: " + nota1 + " nota2: " + nota2 + " nota3: " + nota3 + "]"; 
  }
 
 public double promedioNotas(){
