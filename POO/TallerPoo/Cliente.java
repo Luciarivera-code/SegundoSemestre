@@ -19,16 +19,21 @@ public class Cliente {
 
     public String getDocumento() {
         return documento;
-        // System.out.println(Cliente.getDocumento());
     }
 
     public String getDireccion() {
         return direccion;
-        // System.out.println(Cliente.getDireccion());
     }
 
     public String getTelefono() {
         return telefono;
-        // System.out.println(Cliente.getTelefono());
     }
+
+    @Override
+    public String toString() {
+        return "Cliente [nombre=" + nombre + ", documento=" + documento + ", direccion=" + direccion + ", telefono="
+                + telefono + "]";
+    }
+
+    
 }

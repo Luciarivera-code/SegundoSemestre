@@ -1,18 +1,26 @@
+import java.util.*;
+
 public class Foto {
 
     private String Fichero;
     private String estilo;
-    private String tamaño;
+    private String tamano;
     private Date fecha;
 
-    public Foto(String Fichero, String estilo, String tamaño, Date fecha) {
+    public Foto(String Fichero, String estilo, String tamano, Date fecha) {
         this.Fichero= Fichero;
         this.estilo= estilo;
-        this.tamaño= tamaño;
+        this.tamano= tamano;
         this.fecha= fecha;
     }
     public String getFichero(){
         return Fichero;
     }
-    System.out.println(this.Fichero);
+    
+    @Override
+    public String toString() {
+        return "Foto [Fichero=" + Fichero + ", estilo=" + estilo + ", tamano=" + tamano + ", fecha=" + fecha + "]";
+    }
+    
+    
 }

@@ -12,26 +12,12 @@ public class Producto {
         this.Nombre = Nombre;
     }
 
-    public void Marca() {
-    }
-
-    public void Modelo() {
-    }
-
-    public void Precio() {
-    }
-
-    public void Color() {
-    }
-
-    public void Tamaño() {
-    }
-
-    public void Foto() {
+    public double getPrecio() {
+        return Precio;
     }
 
     @Override
     public String toString() {
-        return "Producto [Precio=" + Precio + " Numero=" + Numero + " Cantidad=" + Cantidad + " Nombre=" + "]";
+        return "Producto [Precio=" + Precio + " Numero=" + Numero + " Cantidad=" + Cantidad + " Nombre=" + Nombre + "]";
     }
 }

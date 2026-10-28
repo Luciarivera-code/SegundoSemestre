@@ -1,13 +1,14 @@
-public class Camara {
+public class Camara extends Producto {
 
     private String Marca;
     private String Modelo;
     private double Precio;
 
-    public Camara(String Marca, String Modelo, double Precio) {
+    public Camara(double Precio, int Numero, int Cantidad, String Nombre, String Marca, String Modelo, double Precio1) {
+        super(Precio, Numero, Cantidad, Nombre);
         this.Marca = Marca;
         this.Modelo = Modelo;
-        this.Precio = Precio;
+        this.Precio = Precio1;
     }
 
     public void Marca() {

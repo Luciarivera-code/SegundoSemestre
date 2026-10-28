@@ -1,12 +1,13 @@
-public class Impresion {
+public class Impresion extends Producto{
 
     private String Color;
-    private String Tamaño;
+    private String Tamano;
     private Foto[] Foto;
 
-    public Impresion(String Color, String Tamaño, Foto[] Foto) {
+    public Impresion(double precio, int Numero, int Cantidad, String Nombre, String Color, String Tamano, Foto[] Foto) {
+        super(precio, Numero, Cantidad, Nombre);
         this.Color = Color;
-        this.Tamaño = Tamaño;
+        this.Tamano = Tamano;
         this.Foto = Foto;
     }
 
@@ -14,7 +15,7 @@ public class Impresion {
         System.out.println("Blanco y negro...");
     }
 
-    public void Tamaño() {
+    public void Tamano() {
         System.out.println("Tamaño medio...");
     }
 
@@ -24,6 +25,6 @@ public class Impresion {
 
     @Override
     public String toString() {
-        return "Impresion[Color=" + Color + " Tamaño=" + Tamaño + "Foto=" + Foto + "]";
+        return "Impresion[Color=" + Color + " Tamano=" + Tamano + "Fotos=" + Foto.length + "]";
     }
 }
