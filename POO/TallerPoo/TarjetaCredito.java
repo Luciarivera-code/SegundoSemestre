@@ -11,5 +11,4 @@ public class TarjetaCredito extends Pago {
     public String toString() {
         return "TarjetaCredito [numeroTarjeta=" + numeroTarjeta + "]";
     }
-
 }
